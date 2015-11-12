@@ -14512,7 +14512,7 @@ ChemDoodle.uis.gui.imageDepot = (function() {
 	'use strict';
 	c.SketcherCanvas = function(id, width, height, options) {
 		// keep checks to undefined here as these are booleans
-		this.isMobile = options.isMobile === undefined ? featureDetection.supports_touch() : options.isMobile;
+		this.isMobile = options.isMobile;
 		this.useServices = options.useServices === undefined ? false : options.useServices;
 		this.oneMolecule = options.oneMolecule === undefined ? false : options.oneMolecule;
 		this.includeToolbar = options.includeToolbar === undefined ? true : options.includeToolbar;
