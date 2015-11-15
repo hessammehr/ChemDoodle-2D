@@ -24,8 +24,6 @@ var ChemDoodle = (function() {
 // Attach external jQuery
 ChemDoodle.lib.jQuery = jQuery;
 
-// Attach external glMatrix
-glAttach(ChemDoodle.lib)
 
 //
 //  Copyright 2006-2010 iChemLabs, LLC.  All rights reserved.

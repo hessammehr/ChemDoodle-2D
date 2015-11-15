@@ -5,26 +5,23 @@
 
 <script type="text/javascript" src="../jquery-2.1.4.js"></script>
 <script type="text/javascript" src="../sizzle.js"></script>
+<script type="text/javascript" src="../jquery-ui.js"></script>
 <script type="text/javascript" src="../jquery.mousewheel.js"></script>
-<script type="text/javascript" src="../glMatrix.js"></script>
 <script type="text/javascript" src="../jsbezier.js"></script>
 <script type="text/javascript" src="../io.js"></script>
-<script type="text/javascript" src="../src/ChemDoodleWeb-unpacked.js"></script>
-<script type="text/javascript" src="../src/ChemDoodleWeb-uis-unpacked.js"></script>
+<script type="text/javascript" src="../src/core.js"></script>
+<script type="text/javascript" src="../src/ui.js"></script>
 <title>ChemDoodle Web Component Sketcher (Full Sketcher)</title>
 </head>
 <body>
 <script>
-  ChemDoodle.ELEMENT['H'].jmolColor = 'black';
-  ChemDoodle.ELEMENT['S'].jmolColor = '#B9A130';
-  var sketcher = new ChemDoodle.SketcherCanvas('sketcher', 500, 300,{useServices:true});
-  sketcher.specs.atoms_displayTerminalCarbonLabels_2D = true;
-  sketcher.specs.atoms_useJMOLColors = true;
+  var sketcher = new ChemDoodle.SketcherCanvas('sketcher', 500, 300,{useServices:false});
+  sketcher.specs.atoms_displayTerminalCarbonLabels_2D = false;
+  sketcher.specs.atoms_useJMOLColors = false;
   sketcher.specs.bonds_clearOverlaps_2D = true;
   sketcher.specs.shapes_color = '#c10000';
   sketcher.repaint();
 </script>
 <br>
-<a href="http://web.chemdoodle.com" title="Open Source HTML5 Chemistry - ChemDoodle Web Components"><img src="http://web.chemdoodle.com/resources/images/badges/badge120x60.png" /></a>
 </body>
 </html>
