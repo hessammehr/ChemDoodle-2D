@@ -1,0 +1,26 @@
+<html>
+<head>
+<link rel="stylesheet" href="install/ChemDoodleWeb.css" type="text/css">
+<link rel="stylesheet" href="install/uis/jquery-ui-1.10.3.custom.css" type="text/css">
+
+<script type="text/javascript" src="src/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="src/jquery-ui.js"></script>
+<script type="text/javascript" src="src/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="src/jsbezier.js"></script>
+<script type="text/javascript" src="src/io.js"></script>
+<script type="text/javascript" src="src/core.js"></script>
+<script type="text/javascript" src="src/ui.js"></script>
+<title>ChemDoodle Web Component Sketcher (Full Sketcher)</title>
+</head>
+<body>
+<script>
+  var sketcher = new ChemDoodle.SketcherCanvas('sketcher', 500, 300,{useServices:false});
+  sketcher.specs.atoms_displayTerminalCarbonLabels_2D = false;
+  sketcher.specs.atoms_useJMOLColors = false;
+  sketcher.specs.bonds_clearOverlaps_2D = true;
+  sketcher.specs.shapes_color = '#c10000';
+  sketcher.repaint();
+</script>
+<br>
+</body>
+</html>
